@@ -67,7 +67,7 @@ return packer.startup(function(use)
   -- my old plugs
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
-  use "danilamihailov/beacon.nvim"
+  -- use "danilamihailov/beacon.nvim"
   use {"jdhao/better-escape.vim", event = "InsertEnter"}
   use "tpope/vim-surround"
   use "gorkunov/smartpairs.vim" 
