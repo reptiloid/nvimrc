@@ -64,13 +64,14 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "sjl/badwolf"
 
-  -- my
+  -- my old plugs
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
   use "danilamihailov/beacon.nvim"
   use {"jdhao/better-escape.vim", event = "InsertEnter"}
   use "tpope/vim-surround"
   use "gorkunov/smartpairs.vim" 
+  use "kevinhwang91/rnvimr"
   
   
   
