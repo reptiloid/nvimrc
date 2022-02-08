@@ -73,6 +73,7 @@ require('lualine').setup {
     theme = theme,
     component_separators = '',
     section_separators = { left = '', right = '' },
+		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
   },
   sections = process_sections {
     lualine_a = { 'mode' },
