@@ -48,7 +48,6 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
@@ -61,19 +60,25 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+  -- use "lunarvim/darkplus.nvim"
   use "sjl/badwolf"
 
   -- my old plugs
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
-  -- use "danilamihailov/beacon.nvim"
   use {"jdhao/better-escape.vim", event = "InsertEnter"}
   use "tpope/vim-surround"
   use "gorkunov/smartpairs.vim" 
   use "kevinhwang91/rnvimr"
-  
-  
+  use "chrisbra/Colorizer"
+  use "tpope/vim-rsi"            -- Emacs keybindings in Insert mode
+  use "tmhedberg/SimpylFold"     -- Fold python code
+  use "chrisbra/NrrwRgn"         -- Narrowing feature like Emacs
+  use "ptzz/lf.vim"
+  use "voldikss/vim-floaterm"
+  use "Shatur/neovim-session-manager"
+    
+    
   
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

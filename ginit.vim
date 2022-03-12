@@ -3,8 +3,11 @@ if exists('g:GuiLoaded')
     GuiTabline 0
 
     GuiPopupmenu 0
-
-    GuiFont Ubuntu Mono derivative Powerlin:h13
+    
+    GuiFont Hack Nerd Font Mono:h11
+    " GuiFont CaskaydiaCove NF:h11
+    " GuiFont DejaVuSansMono Nerd Font Mono:h11
+    " GuiFont Ubuntu Mono derivative Powerlin:h13
 
     " set guicursor=n-v-c-sm:block,i-ci-ve:block,r-cr-o:blocks
     

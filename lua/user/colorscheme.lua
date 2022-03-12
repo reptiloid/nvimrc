@@ -2,9 +2,13 @@ vim.cmd [[
 try
   " colorscheme darkplus
   colorscheme badwolf
+  highlight Search none
+  highlight Search guibg=black
 
   highlight Cursor guifg=white guibg=black
   highlight iCursor guifg=white guibg=steelblue
+
+
   set guicursor=n-v-c:block-Cursor
   set guicursor+=i:ver100-iCursor
   set guicursor+=n-v-c:blinkon0

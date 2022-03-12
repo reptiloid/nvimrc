@@ -6,7 +6,19 @@ vim.cmd [[
     autocmd BufWinEnter * :set formatoptions-=cro
     autocmd FileType qf set nobuflisted
   augroup end
-
+	
+  " augroup ft_lua
+  "   au!
+  "   au Filetype lua setlocal foldmarker=--{{{,--}}}
+  "   au Filetype lua setlocal foldmethod=marker
+  " augroup END
+  
+  augroup ft_lua
+    au!
+    au Filetype lua setlocal foldmethod=expr
+    au Filetype lua setlocal foldexpr=nvim_treesitter#foldexpr()
+  augroup END
+  
   augroup _git
     autocmd!
     autocmd FileType gitcommit setlocal wrap
