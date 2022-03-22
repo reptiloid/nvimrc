@@ -62,7 +62,10 @@ return packer.startup(function(use)
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   use "sjl/badwolf"
-
+  use "Mofiqul/dracula.nvim"
+  use { "ellisonleao/gruvbox.nvim" }
+  use "NLKNguyen/papercolor-theme" 
+    
   -- my old plugs
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
@@ -78,6 +81,7 @@ return packer.startup(function(use)
   use "voldikss/vim-floaterm"
   use "Shatur/neovim-session-manager"
     
+  use "monaqa/dial.nvim" -- C-a, C-x
     
   
   -- cmp plugins

@@ -39,7 +39,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- My -- 
+-- My
 keymap("v", "<C-c>", '"+y', opts)
 keymap("i", "<C-v>", "<C-r>*", opts)
 keymap("n", "<C-z>", "zMzvzz", opts)
@@ -50,7 +50,12 @@ keymap("n", "<C-j>", ":bprevious<CR>", opts)
 keymap("n", "<S-h>", "^", opts)
 keymap("n", "<S-l>", "$", opts)
 
+keymap("n", "g<C-o>", "o<ESC>k", opts)
+keymap("n", "gO", "O<ESC>j", opts)
 
+-- dial.nvim
+keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
+keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
 
 
 -- Visual --
