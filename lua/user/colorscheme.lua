@@ -2,8 +2,10 @@ vim.cmd [[
 try
   " colorscheme darkplus
   colorscheme badwolf
+  hi Visual cterm=NONE    ctermbg=cyan  ctermfg=black
   highlight Search none
-  highlight Search guibg=black
+  highlight Search guibg=black guifg=red
+  hi Search cterm=reverse ctermbg=black ctermfg=red
 
   highlight Cursor guifg=white guibg=black
   highlight iCursor guifg=white guibg=steelblue
