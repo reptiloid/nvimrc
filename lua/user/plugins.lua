@@ -80,8 +80,11 @@ return packer.startup(function(use)
   use "ptzz/lf.vim"
   use "voldikss/vim-floaterm"
   use "Shatur/neovim-session-manager"
-    
+
+    -- my new plugins 
   use "monaqa/dial.nvim" -- C-a, C-x
+  -- use {'stevearc/aerial.nvim'}
+  use "RRethy/vim-illuminate"
     
   
   -- cmp plugins
