@@ -76,7 +76,7 @@ return packer.startup(function(use)
   use "chrisbra/Colorizer"
   use "tpope/vim-rsi"            -- Emacs keybindings in Insert mode
   use "tmhedberg/SimpylFold"     -- Fold python code
-  use "chrisbra/NrrwRgn"         -- Narrowing feature like Emacs
+  -- use "chrisbra/NrrwRgn"         -- Narrowing feature like Emacs
   use "ptzz/lf.vim"
   use "voldikss/vim-floaterm"
   use "Shatur/neovim-session-manager"
@@ -85,7 +85,7 @@ return packer.startup(function(use)
   use "monaqa/dial.nvim" -- C-a, C-x
   -- use {'stevearc/aerial.nvim'}
   use "RRethy/vim-illuminate"
-    
+  use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
   
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

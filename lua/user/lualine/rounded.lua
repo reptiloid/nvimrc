@@ -31,6 +31,9 @@ local bubbles_theme = {
   },
 }
 
+local gps = require('nvim-gps')
+
+
 require('lualine').setup {
   options = {
     theme = bubbles_theme,
@@ -41,10 +44,12 @@ require('lualine').setup {
     lualine_a = {
       { 'mode', separator = { left = '' }, right_padding = 2 },
     },
+    -- lualine_b = { 'branch' },
     lualine_b = { 'branch' },
     lualine_c = { 'fileformat' },
     lualine_x = {},
-    lualine_y = { 'filetype', 'progress' },
+    -- lualine_y = { { gps.get_location, cond = gps.is_available }, 'filetype', 'progress' },
+    lualine_y = { { gps.get_location, cond = gps.is_available } },
     lualine_z = {
       { 'location', separator = { right = '' }, left_padding = 2 },
     },
