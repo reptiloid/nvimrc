@@ -5,7 +5,7 @@ if exists('g:GuiLoaded')
     GuiPopupmenu 0
     
     " GuiFont UbuntuMono Nerd Font:h12
-    GuiFont Hack Nerd Font Mono:h11
+    GuiFont Hack Nerd Font Mono:h10.25
     " GuiFont CaskaydiaCove NF:h11
     " GuiFont DejaVuSansMono Nerd Font Mono:h11
     " GuiFont Ubuntu Mono derivative Powerlin:h13

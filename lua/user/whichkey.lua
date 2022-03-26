@@ -78,6 +78,22 @@ local opts = {
   nowait = true, -- use `nowait` when creating keymaps
 }
 
+local v_opts = {
+  mode = "v",
+  prefix = "<leader>",
+  buffer = nil,
+  silent = true,
+  noremap = true,
+  nowait = true,
+}
+
+local v_mappings = {
+  y = {
+    name = "Yode",
+    c = { "<cmd>YodeCreateSeditorFloating<cr>", "Create Floating" },
+  },
+}
+
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
@@ -183,7 +199,9 @@ local mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     r = { "<cmd>RnvimrToggle<cr>", "Ranger" },
   },
+
 }
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
+-- which_key.register(v_mappings, v_opts)

@@ -2,6 +2,7 @@ vim.cmd [[
 try
   " colorscheme darkplus
   colorscheme badwolf
+  " colorscheme xcodelight
   hi Visual cterm=NONE    ctermbg=cyan  ctermfg=black
   highlight Search none
   highlight Search guibg=black guifg=red
@@ -16,12 +17,14 @@ try
   set guicursor+=n-v-c:blinkon0
   set guicursor+=i:blinkwait10
   set background=dark
+  " set background=light
 
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
 endtry
 ]]
+
 
 vim.g.badwolf_darkgutter = 1
 vim.g.badwolf_tabline = 1

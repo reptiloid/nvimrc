@@ -53,6 +53,11 @@ keymap("n", "<S-l>", "$", opts)
 keymap("n", "g<C-o>", "o<ESC>k", opts)
 keymap("n", "gO", "O<ESC>j", opts)
 
+-- yode.nvim
+keymap("v", "g<C-f>", ":YodeCreateSeditorFloating<CR>", {noremap = true})
+-- keymap("n", "g<C-d>", ":YodeBufferDelete<CR>", {noremap = true})
+
+
 -- dial.nvim
 keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
 keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
@@ -64,8 +69,8 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+-- keymap("v", "<A-j>", ":m .+1<CR>==", opts)
+-- keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --

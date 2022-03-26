@@ -63,8 +63,9 @@ return packer.startup(function(use)
   -- use "lunarvim/darkplus.nvim"
   use "sjl/badwolf"
   use "Mofiqul/dracula.nvim"
-  use { "ellisonleao/gruvbox.nvim" }
+  use "ellisonleao/gruvbox.nvim"
   use "NLKNguyen/papercolor-theme" 
+  use "arzg/vim-colors-xcode"
     
   -- my old plugs
   use "rhysd/clever-f.vim"
@@ -86,6 +87,7 @@ return packer.startup(function(use)
   -- use {'stevearc/aerial.nvim'}
   use "RRethy/vim-illuminate"
   use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
+  use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"}
   
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
