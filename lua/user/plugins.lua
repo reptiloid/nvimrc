@@ -58,36 +58,43 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
 
+
   -- Colorschemes
+  -- use "~/projects/badreptiloid"
+  use "rktjmp/lush.nvim" -- colorschemes creation
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   use "sjl/badwolf"
-  use "Mofiqul/dracula.nvim"
+  -- use "Mofiqul/dracula.nvim"
   use "ellisonleao/gruvbox.nvim"
-  use "NLKNguyen/papercolor-theme" 
-  use "arzg/vim-colors-xcode"
+  -- use "NLKNguyen/papercolor-theme" 
+  -- use "arzg/vim-colors-xcode"
+  -- use "EdenEast/nightfox.nvim"
+  -- use "sainnhe/sonokai"
+  -- use 'olimorris/onedarkpro.nvim'
     
   -- my old plugs
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
   use {"jdhao/better-escape.vim", event = "InsertEnter"}
-  use "tpope/vim-surround"
+  use "tpope/vim-surround"  -- cs"' ds"
+  use "tpope/vim-repeat"
   use "gorkunov/smartpairs.vim" 
-  use "kevinhwang91/rnvimr"
   use "chrisbra/Colorizer"
   use "tpope/vim-rsi"            -- Emacs keybindings in Insert mode
   use "tmhedberg/SimpylFold"     -- Fold python code
-  -- use "chrisbra/NrrwRgn"         -- Narrowing feature like Emacs
+  -- use "chrisbra/NrrwRgn"      -- Narrowing feature like Emacs
+
+    -- my new plugins 
   use "ptzz/lf.vim"
   use "voldikss/vim-floaterm"
   use "Shatur/neovim-session-manager"
-
-    -- my new plugins 
+  use "stevearc/dressing.nvim"
   use "monaqa/dial.nvim" -- C-a, C-x
-  -- use {'stevearc/aerial.nvim'}
-  use "RRethy/vim-illuminate"
+  -- use "stevearc/aerial.nvim"
+  use "RRethy/vim-illuminate" -- highlighting uses of the current word under the cursor
   use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
-  use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"}
+  use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"} -- Focus on the important parts of the code
   
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -111,10 +118,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
 
   -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
+  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", }
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git

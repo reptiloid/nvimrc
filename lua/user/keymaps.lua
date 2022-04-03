@@ -62,6 +62,11 @@ keymap("v", "g<C-f>", ":YodeCreateSeditorFloating<CR>", {noremap = true})
 keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
 keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
 
+-- powershell toggle
+-- keymap("n", "<C-space>", "<cmd>lua _POWERSHELL_TOGGLE()<cr>", opts)
+-- keymap("i", "<C-space>", "<cmd>lua _POWERSHELL_TOGGLE()<cr>", opts)
+
+
 
 -- Visual --
 -- Stay in indent mode

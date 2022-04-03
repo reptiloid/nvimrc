@@ -26,7 +26,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-    dashboard.button("s", "++ Last Session", ":SessionManager load_last_session<CR>"),
+    dashboard.button("s", "  Sessions", ":SessionManager load_session<CR>"),
     dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
 }
 
@@ -36,5 +36,4 @@ dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
--- vim.cmd[[autocmd User AlphaReady echo 'ready']]
 alpha.setup(dashboard.opts)
