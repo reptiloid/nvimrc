@@ -36,8 +36,8 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Move text up and down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+-- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+-- keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- My
 keymap("v", "<C-c>", '"+y', opts)
@@ -62,9 +62,6 @@ keymap("v", "g<C-f>", ":YodeCreateSeditorFloating<CR>", {noremap = true})
 keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
 keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
 
--- powershell toggle
--- keymap("n", "<C-space>", "<cmd>lua _POWERSHELL_TOGGLE()<cr>", opts)
--- keymap("i", "<C-space>", "<cmd>lua _POWERSHELL_TOGGLE()<cr>", opts)
 
 
 

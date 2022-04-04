@@ -1,11 +1,10 @@
--- local status_ok, which_key = pcall(require, "dial.config")
--- if not status_ok then
---   return
--- end
---
+local status_ok, augend = pcall(require, "dial.augend")
+if not status_ok then
+  return
+end
 
 
-local augend = require("dial.augend")
+
 require("dial.config").augends:register_group{
   -- default augends used when no group name is specified
   default = {
