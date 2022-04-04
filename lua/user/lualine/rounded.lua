@@ -33,20 +33,53 @@ local bubbles_theme = {
 
 local gps = require('nvim-gps')
 
+local function packer_plugins_count()
+    local status_ok, alpha = pcall(require, "alpha")
+    if not status_ok then
+        return [[hello world]]
+    end
+
+    local plugins_count = 0
+    if vim.fn.has("win32") == 1 then
+        plugins_count = vim.fn.len(vim.fn.globpath("~/AppData/Local/nvim-data/site/pack/packer/start", "*", 0, 1))
+    else
+        plugins_count = vim.fn.len(vim.fn.globpath("~/.local/share/nvim/site/pack/packer/start", "*", 0, 1))
+    end
+    return " Plugins:    " .. plugins_count
+end
+
+local function nvim_version()
+    local version = vim.version()
+    local nvim_version_info = "   " .. version.major .. "." .. version.minor .. "." .. version.patch
+    return " Neovim: " .. nvim_version_info
+end
+
+
+local alpha_extension = { sections = {
+    lualine_a = { { nvim_version } },
+    lualine_z = { { packer_plugins_count } },
+    }, filetypes = {'alpha'} 
+}
 
 require('lualine').setup {
   options = {
+    -- theme = 'gruvbox',
+    -- theme = 'wombat',
+    -- theme = 'jellybeans',
     theme = bubbles_theme,
+    -- disabled_filetypes = {'alpha'},
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
   sections = {
     lualine_a = {
-      { 'mode', separator = { left = '' }, right_padding = 2 },
+      { 'mode', fmt = function(str) return str:sub(1,1) end },
+      -- { 'mode', separator = { left = '' }, right_padding = 2 },
     },
     -- lualine_b = { 'branch' },
     lualine_b = { 'branch' },
-    lualine_c = { 'fileformat' },
+    lualine_c = { },
+    -- lualine_c = { 'fileformat' },
     lualine_x = {},
     -- lualine_y = { { gps.get_location, cond = gps.is_available }, 'filetype', 'progress' },
     lualine_y = { { gps.get_location, cond = gps.is_available } },
@@ -63,5 +96,5 @@ require('lualine').setup {
     lualine_z = { 'location' },
   },
   tabline = {},
-  extensions = {'quickfix', 'nvim-tree'},
+  extensions = {'quickfix', 'nvim-tree', alpha_extension },
 }

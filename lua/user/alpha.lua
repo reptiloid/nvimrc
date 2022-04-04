@@ -10,7 +10,7 @@ local function footer()
     else
         plugins_count = vim.fn.len(vim.fn.globpath("~/.local/share/nvim/site/pack/packer/start", "*", 0, 1))
     end
-    local datetime = os.date(" %Y-%m-%d %H:%M:%S")
+    -- local datetime = os.date(" %Y-%m-%d %H:%M:%S")
     local version = vim.version()
     local nvim_version_info = "   " .. version.major .. "." .. version.minor .. "." .. version.patch
     return {
@@ -19,7 +19,7 @@ local function footer()
         "",
         "",
         "",
-        " Plugins:    " .. plugins_count .. "    ",
+        " Plugins:   " .. plugins_count .. "    ",
         " Neovim: " .. nvim_version_info,
     }
 end
@@ -44,7 +44,8 @@ dashboard.section.buttons.val = {
     dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
-dashboard.section.footer.val = footer()
+dashboard.section.footer.val = {}
+-- dashboard.section.footer.val = footer()
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
