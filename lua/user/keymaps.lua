@@ -52,6 +52,7 @@ keymap("n", "<S-l>", "$", opts)
 
 keymap("n", "g<C-o>", "o<ESC>k", opts)
 keymap("n", "gO", "O<ESC>j", opts)
+keymap("n", "<F2>", ":Startify<CR>", opts)
 
 -- yode.nvim
 keymap("v", "g<C-f>", ":YodeCreateSeditorFloating<CR>", {noremap = true})

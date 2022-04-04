@@ -74,6 +74,7 @@ return packer.startup(function(use)
   -- use 'olimorris/onedarkpro.nvim'
     
   -- my old plugs
+  use "mhinz/vim-startify"
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
   use {"jdhao/better-escape.vim", event = "InsertEnter"}
