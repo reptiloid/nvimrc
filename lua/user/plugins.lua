@@ -91,7 +91,7 @@ return packer.startup(function(use)
   use "Shatur/neovim-session-manager"
   use "stevearc/dressing.nvim"
   use "monaqa/dial.nvim" -- C-a, C-x
-  -- use "stevearc/aerial.nvim"
+  use "stevearc/aerial.nvim"
   use "RRethy/vim-illuminate" -- highlighting uses of the current word under the cursor
   use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
   use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"} -- Focus on the important parts of the code
