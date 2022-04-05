@@ -90,8 +90,8 @@ return packer.startup(function(use)
   use "ptzz/lf.vim"
   use "voldikss/vim-floaterm"
   use "Shatur/neovim-session-manager"
-  use "stevearc/dressing.nvim"
   use "monaqa/dial.nvim" -- C-a, C-x
+  use "stevearc/dressing.nvim"
   use "stevearc/aerial.nvim"
   use "RRethy/vim-illuminate" -- highlighting uses of the current word under the cursor
   use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }

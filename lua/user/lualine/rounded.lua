@@ -96,5 +96,5 @@ require('lualine').setup {
     lualine_z = { 'location' },
   },
   tabline = {},
-  extensions = {'quickfix', 'nvim-tree', alpha_extension },
+  extensions = {'quickfix', 'nvim-tree', 'aerial', alpha_extension },
 }
