@@ -26,12 +26,27 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
- [[ ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
- [[ ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║]],
- [[ ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║]],
- [[ ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
- [[ ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
- [[ ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
+[[███    ██ ███████  ██████  ██    ██ ██ ███    ███]],
+[[████   ██ ██      ██    ██ ██    ██ ██ ████  ████]],
+[[██ ██  ██ █████   ██    ██ ██    ██ ██ ██ ████ ██]],
+[[██  ██ ██ ██      ██    ██  ██  ██  ██ ██  ██  ██]],
+[[██   ████ ███████  ██████    ████   ██ ██      ██]],
+ -- [[ ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
+ -- [[ ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║]],
+ -- [[ ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║]],
+ -- [[ ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
+ -- [[ ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
+ -- [[ ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
+ [[]],
 }
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
@@ -47,8 +62,8 @@ dashboard.section.buttons.val = {
 dashboard.section.footer.val = {}
 -- dashboard.section.footer.val = footer()
 dashboard.section.footer.opts.hl = "Type"
-dashboard.section.header.opts.hl = "Include"
-dashboard.section.buttons.opts.hl = "Keyword"
+dashboard.section.header.opts.hl = "Comment"
+dashboard.section.buttons.opts.hl = "Type"
 
 dashboard.opts.opts.noautocmd = true
 alpha.setup(dashboard.opts)
