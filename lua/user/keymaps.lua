@@ -52,17 +52,19 @@ keymap("n", "<S-l>", "$", opts)
 
 keymap("n", "g<C-o>", "o<ESC>k", opts)
 keymap("n", "gO", "O<ESC>j", opts)
-keymap("n", "<F2>", ":Startify<CR>", opts)
+
+
+keymap("n", "<C-f>", ":Telescope aerial<CR>", opts)
+keymap("n", "<C-b>", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 
 -- yode.nvim
-keymap("v", "g<C-f>", ":YodeCreateSeditorFloating<CR>", {noremap = true})
+-- keymap("v", "g<C-f>", ":YodeCreateSeditorFloating<CR>", {noremap = true})
 -- keymap("n", "g<C-d>", ":YodeBufferDelete<CR>", {noremap = true})
 
 
 -- dial.nvim
 keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
 keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
-
 
 
 

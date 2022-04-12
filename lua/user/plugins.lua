@@ -74,7 +74,7 @@ return packer.startup(function(use)
   -- use 'olimorris/onedarkpro.nvim'
     
   -- my old plugs
-  use "mhinz/vim-startify"
+  -- use "mhinz/vim-startify"
   use "rhysd/clever-f.vim"
   use "kdheepak/tabline.nvim"
   use {"jdhao/better-escape.vim", event = "InsertEnter"}
@@ -95,7 +95,7 @@ return packer.startup(function(use)
   use "stevearc/aerial.nvim"
   use "RRethy/vim-illuminate" -- highlighting uses of the current word under the cursor
   use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
-  use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"} -- Focus on the important parts of the code
+  -- use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"} -- Focus on the important parts of the code
   
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -104,6 +104,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  -- use { "VonHeikemen/fine-cmdline.nvim", requires = "MunifTanjim/nui.nvim" }
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine

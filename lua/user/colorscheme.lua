@@ -1,10 +1,7 @@
 vim.cmd [[
 try
-  " colorscheme darkplus
   colorscheme badwolf
-  " colorscheme onedarkpro
   " colorscheme gruvbox
-    " colorscheme nordfox
 
   hi Visual cterm=NONE    ctermbg=cyan  ctermfg=black
   highlight Search none
