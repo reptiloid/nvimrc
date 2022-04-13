@@ -27,3 +27,8 @@ require("dial.config").augends:register_group{
     augend.date.alias["%m/%d/%Y"], -- date (02/19/2022, etc.)
   }
 }
+
+
+
+vim.api.nvim_set_keymap("n", "<C-a>", require("dial.map").inc_normal(), {noremap = true})
+vim.api.nvim_set_keymap("n", "<C-x>", require("dial.map").dec_normal(), {noremap = true})

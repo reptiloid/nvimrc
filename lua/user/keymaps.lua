@@ -63,8 +63,8 @@ keymap("n", "<C-b>", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 
 
 -- dial.nvim
-keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
-keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
+-- keymap("n", "<C-a>", require("dial.map").inc_normal(), opts)
+-- keymap("n", "<C-x>", require("dial.map").dec_normal(), opts)
 
 
 
