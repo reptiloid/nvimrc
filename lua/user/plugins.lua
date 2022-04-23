@@ -65,6 +65,7 @@ return packer.startup(function(use)
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   use "sjl/badwolf"
+  use "navarasu/onedark.nvim"
   -- use "Mofiqul/dracula.nvim"
   use "ellisonleao/gruvbox.nvim"
   -- use "NLKNguyen/papercolor-theme" 
@@ -96,7 +97,11 @@ return packer.startup(function(use)
   use "RRethy/vim-illuminate" -- highlighting uses of the current word under the cursor
   use { "SmiteshP/nvim-gps", requires = "nvim-treesitter/nvim-treesitter" }
   -- use { "hoschi/yode-nvim", requires = "nvim-lua/plenary.nvim"} -- Focus on the important parts of the code
-  
+  use "rcarriga/nvim-notify"
+
+
+
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

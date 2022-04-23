@@ -48,3 +48,5 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 -- lf filemanager options
 vim.g.lf_width = .8
 vim.g.lf_height = .9
+
+vim.notify = require("notify")
