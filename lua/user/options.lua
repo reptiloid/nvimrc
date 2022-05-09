@@ -49,4 +49,4 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.g.lf_width = .8
 vim.g.lf_height = .9
 
-vim.notify = require("notify")
+-- vim.notify = require("notify")
